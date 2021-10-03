@@ -191,3 +191,4 @@ function confucius_posts_list_class( $classes = array(), $echo = true ) {
 
 	echo $output;
 }
+

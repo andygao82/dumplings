@@ -243,6 +243,9 @@ if ( ! class_exists( 'Confucius_Theme_Setup' ) ) {
 						'priority' => 999,
 						'autoload' => false,
 					),
+					'cherry-interface-builder' => array(
+						'autoload' => false,
+					),
 				),
 			) );
 
