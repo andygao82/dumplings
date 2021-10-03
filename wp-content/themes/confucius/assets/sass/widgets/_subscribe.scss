@@ -1,0 +1,111 @@
+.widget-subscribe {
+	.container {
+		&.subscribe-block__wrap,
+		&.follow-block__wrap {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	.subscribe-follow__wrap {
+		&.use-custom-bg{
+			padding: 25px 15px;
+			@include media-breakpoint-only(md) {
+				padding: 25px 0;
+			}
+		}
+		.full-width-header-area &,
+		.after-content-full-width-area & {
+			padding: 63px 0 42px;
+		}
+	}
+
+	#tm_builder_outer_content .tm_pb_widget_area & {
+		* {
+			max-width: none;
+		}
+	}
+}
+
+.follow-block {
+	padding: 0 0 20px;
+	.widget-title {
+		margin-bottom: 0;
+	}
+
+	.subscribe-block + & {
+		padding: 15px 0 0;
+		@include media-breakpoint-up(lg) {
+			padding: 25px 0 0;
+		}
+	}
+	&__wrap {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.social-list {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+
+.subscribe-block {
+	.widget-title {
+
+	}
+
+	&__form {
+		.full-width-header-area &,
+		.after-content-full-width-area & {
+			@include media-breakpoint-up(lg) {
+				padding-top: 8px;
+			}
+		}
+	}
+	&__input-group {
+		position: relative;
+	}
+	&__input[type='email'] {
+		width: 100%;
+		padding: 14px 55px 14px 27px;
+		@include font-size(.9375);
+		line-height: 20px;
+		box-shadow: none;
+		max-width: 100%;
+		@include border-radius(25px);
+
+		&.error,
+		.invert .footer-area &.error{
+			border-color: $color__not-valid;
+
+		}
+	}
+	&__submit {
+		position: absolute;
+		right: -0.5px;
+		padding: 12.5px 26.5px;;
+		line-height: 25px;
+		@include border-radius(25px);
+		border: none;
+
+		&.btn:active{
+			box-shadow: none;
+		}
+		i {
+			font-size: 20px;
+			display: block;
+			line-height: 25px;
+		}
+	}
+	&__message {
+		padding: 0 0 25px;
+	}
+	&__error{
+		color: $color__not-valid;
+	}
+	&__success {
+		color: $color__valid;
+	}
+}

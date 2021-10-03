@@ -1,0 +1,20 @@
+/* #Footer */
+.footer-container {
+	background-color: $footer_bg;
+}
+.footer-area-wrap,
+.footer-top{
+	background-color: $footer_widgets_bg;
+}
+.invert .site-info{
+	color: $regular_text_color;
+}
+.invert .site-info a {
+	color: $regular_link_color;
+}
+.invert .site-info a:hover {
+	color: $invert_link_color
+}
+.invert.footer-area-container {
+	color: @lighten($regular_text_color, 35%);
+}

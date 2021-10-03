@@ -1,0 +1,76 @@
+/* #Main Menu */
+.main-navigation .menu > li > a,
+.footer-menu .footer-menu__items> li > a{
+	font-family: @font_family( $navigation_font_family );
+	font-style: $navigation_font_style;
+	font-weight: $navigation_font_weight;
+	font-size: $navigation_font_size{px};
+	line-height: $navigation_line_height;
+	letter-spacing: $navigation_letter_spacing{px};
+	color: $regular_accent_color_2;
+}
+@media (max-width: 767px) {
+	.main-navigation .menu > li > a{
+		color: $invert_link_color;
+	}
+}
+.invert .main-navigation .menu > li > a,
+.invert .footer-menu .footer-menu__items> li > a{
+	color: $invert_link_color;
+}
+.main-navigation .menu > li > a:hover,
+.main-navigation .menu > li.menu-hover > a,
+.main-navigation .menu > li.current_page_item > a,
+.main-navigation .menu > li.current_page_ancestor > a,
+.main-navigation .menu > li.current-menu-item > a,
+.main-navigation .menu > li.current-menu-ancestor > a {
+	color: $regular_accent_color_1;
+}
+.footer-menu .footer-menu__items > li > a:hover,
+.footer-menu .footer-menu__items > li.menu-hover > a,
+.footer-menu .footer-menu__items > li.current_page_ancestor > a,
+.footer-menu .footer-menu__items > li.current_menu_ancestor > a,
+.footer-menu .footer-menu__items > li.current-menu-item > a,
+.footer-menu .footer-menu__items > li.current_page_item > a{
+	color: $regular_link_color;
+}
+/*sub-menu*/
+.main-navigation .sub-menu {
+	background: @darken( $regular_accent_color_2, 3.5% );
+}
+.main-navigation .menu > li > .sub-menu{
+	background: $regular_accent_color_2;
+}
+.main-navigation ul ul a {
+	color: $invert_link_color;
+}
+.main-navigation .sub-menu > li > a:hover,
+.main-navigation .sub-menu > li.menu-hover > a,
+.main-navigation .sub-menu > li.current_page_item > a,
+.main-navigation .sub-menu > li.current_page_ancestor > a,
+.main-navigation .sub-menu > li.current-menu-item > a,
+.main-navigation .sub-menu > li.current-menu-ancestor > a {
+	color: $regular_link_color;
+}
+/*menu-item desc*/
+.menu-item__desc {
+	font-family: @font_family( $body_font_family );
+}
+.sub-menu .menu-item__desc {
+	color: $invert_text_color;
+}
+/*mobile menu*/
+@media (max-width: 767px) {
+	.main-navigation .menu,
+	.main-navigation .menu::before{
+		background: $regular_accent_color_2;
+	}
+	.main-navigation .menu li .sub-menu{
+		background: @darken( $regular_accent_color_2, 3.5% );
+	}
+}
+/* #Footer Menu */
+.footer-menu__items li.current-menu-item a,
+.footer-menu__items li.current_page_item a {
+	/*color: $regular_text_color;*/
+}

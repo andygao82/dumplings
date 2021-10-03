@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 18px;
+	&:not(.entry-title):only-child {
+		margin: 0;
+	}
+
+	h1 + &, h2 + &, h3 + &, h4 + &, h5 + &, h6 + & {
+		margin-top: 40px;
+	}
+
+	p + &,
+	ol + &,
+	ul + &,
+	dl + &,
+	blockquote + &{
+		margin-top: 42px;
+	}
+}
+

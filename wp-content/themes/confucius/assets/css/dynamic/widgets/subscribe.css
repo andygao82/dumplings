@@ -1,0 +1,27 @@
+.subscribe-block__submit.btn {
+	color: $regular_link_color;
+}
+.subscribe-block__submit.btn:hover {
+	color: $regular_link_hover_color;
+}
+.invert .footer-area .subscribe-block__submit.btn:hover{
+	color: $invert_text_color;
+}
+.invert .footer-area .subscribe-block__input[type="email"] {
+	color: $invert_text_color;
+	background: @lighten($footer_widgets_bg, 6%);
+	border-color: @lighten($footer_widgets_bg, 6%);
+}
+.invert .footer-area .subscribe-block__input[type="email"]:focus {
+	box-shadow: 0 0 10px $regular_text_color;
+}
+
+.subscribe-block__input[type="email"]::-webkit-input-placeholder { color: $invert_accent_color_3; }
+.subscribe-block__input[type="email"]::-moz-placeholder { color: $invert_accent_color_3; }
+.subscribe-block__input[type="email"]:-moz-placeholder { color: $invert_accent_color_3; }
+.subscribe-block__input[type="email"]:-ms-input-placeholder { color: $invert_accent_color_3; }
+
+.invert .footer-area .subscribe-block__input[type="email"]::-webkit-input-placeholder { color: $regular_text_color; }
+.invert .footer-area .subscribe-block__input[type="email"]::-moz-placeholder { color: $regular_text_color; }
+.invert .footer-area .subscribe-block__input[type="email"]:-moz-placeholder { color: $regular_text_color; }
+.invert .footer-area .subscribe-block__input[type="email"]:-ms-input-placeholder { color: $regular_text_color; }

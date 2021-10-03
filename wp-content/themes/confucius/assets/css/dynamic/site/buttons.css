@@ -1,0 +1,33 @@
+/* #Button Appearance Styles (regular scheme) */
+.btn-link,
+.btn {
+	font-family: @font_family( $navigation_font_family );
+}
+.btn:active {
+	box-shadow: 0 0 10px $regular_accent_color_1;
+}
+
+.btn.btn-primary,
+.entry-content #tm_builder_outer_content .btn.btn-primary{
+	background-color: transparent;
+	border-color: @lighten($regular_text_color, 35%);
+	color: $regular_accent_color_1;
+}
+.btn.btn-primary:hover,
+.entry-content #tm_builder_outer_content .btn.btn-primary:hover{
+	background-color: $regular_link_color;
+	border-color: $regular_link_color;
+	color: $invert_accent_color_1;
+}
+
+/* #Button Appearance Styles (invert scheme) */
+.invert .btn.btn-primary,
+.entry-content #tm_builder_outer_content .invert .btn.btn-primary {
+	border-color: $invert_accent_color_1;
+	color: $invert_accent_color_1;
+}
+.invert .btn.btn-primary:hover,
+.entry-content #tm_builder_outer_content .invert .btn.btn-primary:hover{
+	border-color: $regular_link_color;
+	color: $invert_accent_color_1;
+}

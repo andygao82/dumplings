@@ -1,0 +1,44 @@
+.showcase-active {
+	.header-wrapper {
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+		}
+	}
+}
+
+.showcase-panel{
+	position: relative;
+	z-index: 2;
+	padding: 20px 15px 230px;
+	text-align: center;
+	@include media-breakpoint-up(md) {
+		padding: 20px 15px 400px;
+	}
+	@include media-breakpoint-up(xl) {
+		padding: 20px 15px;
+	}
+
+	&__title {
+		margin-bottom: 0;
+	}
+	&__subtitle{
+		margin-top: 0;
+		margin-bottom: 23px;
+	}
+	&__description{
+		margin-bottom: 25px;
+		display: none;
+		line-height: 1.3;
+		@include media-breakpoint-up(md) {
+			display: block;
+		}
+	}
+	&__btn {}
+}

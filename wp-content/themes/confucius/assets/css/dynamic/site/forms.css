@@ -1,0 +1,67 @@
+/* #Search Form */
+input.search-form__field {
+	background-color: $invert_accent_color_1;
+	color: $regular_text_color;
+}
+.search-form__submit{
+	color: $invert_link_hover_color;
+}
+.search-form__submit:hover {
+	color: $regular_link_hover_color;
+}
+
+.top-panel input.search-form__field,
+.invert.top-panel input.search-form__field{
+	background-color: @darken( $regular_accent_color_2, 3.5% );
+}
+.top-panel .search-form__field,
+.invert.top-panel .search-form__field {
+	color: $invert_text_color;
+}
+.top-panel .search-form__submit,
+.invert.top-panel .search-form__submit{
+	color: $invert_link_color;
+}
+.top-panel .search-form__submit:hover,
+.invert.top-panel .search-form__submit:hover{
+	color: $invert_link_hover_color;
+}
+
+.search-form__field::-webkit-input-placeholder { color: $invert_accent_color_3; }
+.search-form__field::-moz-placeholder { color: $invert_accent_color_3; }
+.search-form__field:-moz-placeholder { color: $invert_accent_color_3; }
+.search-form__field:-ms-input-placeholder { color: $invert_accent_color_3; }
+
+/* #Comment, Contact, Password Forms */
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']{
+	font-family: @font_family( $navigation_font_family );
+}
+.comment-form .submit,
+.wpcf7-submit,
+.post-password-form label + input {
+	font-family: @font_family( $navigation_font_family );
+	background-color: transparent;
+	border-color: @lighten($regular_text_color, 35%);
+	color: $regular_accent_color_1;
+}
+.comment-form .submit:hover,
+.wpcf7-submit:hover,
+.post-password-form label + input:hover {
+	background-color: $regular_link_color;
+	border-color: $regular_link_color;
+	color: $invert_accent_color_1;
+}
+.comment-form .submit:active,
+.wpcf7-submit:active,
+.post-password-form label + input:active {
+	box-shadow: 0 0 10px $regular_accent_color_1;
+}
+
+/* #Input Placeholders */
+::-webkit-input-placeholder { color: $regular_accent_color_2; }
+::-moz-placeholder          { color: $regular_accent_color_2; }
+:-moz-placeholder           { color: $regular_accent_color_2; }
+:-ms-input-placeholder      { color: $regular_accent_color_2; }
